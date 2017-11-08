@@ -1,0 +1,27 @@
+#télécharger introscilab.pdf et le sauvegarder dans le répertoire courant
+wget www.scilab.org/content/download/247/1702/file/introscilab.pdf
+
+#ouvrir le fichier introscilab.pdf en arriere plan 
+evince introscilab.pdf &
+ou
+evince introscilab
+ctrl+z
+bg
+
+#télécharger latex
+sudo apt install texlive-latex-base
+s'il y'a des problemes dans pdflatex 
+Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+alors faire 
+sudo apt-get install texlive-full
+
+pdflatex enonce-TP-2017.tex
+evince enonce-TP-2017-2.pdf
+
+file -bi enonce-TP-2017.tex>>>text/x-tex; charset=utf-8
+
+
+
+
+
